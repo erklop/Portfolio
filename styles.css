@@ -1,0 +1,139 @@
+
+
+
+header {
+  background-color: #333; /* Dark gray */
+  color: #fff;            /* White text for contrast */
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  font-weight: 200;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: black;
+  display: flex; /* Enables a flexbox container */
+  flex-direction: column; /* Stacks the child elements vertically */
+  min-height: 100vh; /* Ensures the body is at least the height of the viewport */
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  max-width: 1400px; /* Adjust this value to your liking */
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333; /* Dark gray */
+  color: #fff;            /* White text for contrast */
+}
+#About-me, #Projects, #Contact {
+  scroll-margin-top: 150px; /* Adjust this value to the height of your header */
+}
+
+section {
+  border-bottom: 1px solid #ddd; /* A subtle gray line */
+  padding-bottom: 20px; /* Adds space between the content and the line */
+  margin-bottom: 20px; /* Adds space below the line before the next section */
+}
+
+a {
+  transition: color 0.3s ease; /* Add this line */
+  /* Other existing styles for your links */
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #c0c0c0;
+  outline: none;
+}
+
+.projects-container {
+  display: flex; /* Establishes a flexbox container */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+  gap: 20px; /* Creates space between the cards */
+  justify-content: center; /* Centers the cards horizontally */
+}
+
+.project-card {
+  background-color: #fff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+  flex: 1 1 300px; /* Allows the card to grow, shrink, and have a base width */
+  transition: transform 0.3s ease; /* For the hover effect */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Moves the card up slightly on hover */
+}
+
+.project-card h3 {
+  margin-top: 0; /* Remove top margin for a cleaner look */
+}
+
+.project-card a {
+  display: inline-block; /* Allows padding to be applied */
+  margin-top: 10px;
+  text-decoration: none; /* Removes the underline from the link */
+  color: #333; /* Matches the text color */
+  border-bottom: 2px solid #333; /* Adds a line under the link */
+  transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
+}
+
+
+.contact-link {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  transition: transform 0.3s ease;
+}
+.contact-link:hover {
+  transform: translateY(-5px); /* Moves the card up slightly on hover */
+}
+
+.contact-link a {
+  display: inline-block; /* Allows padding to be applied */
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  color: #7c7b7b;
+}
+
+nav a {
+  /* Existing styles */
+  color: #fff; /* White text */
+  text-decoration: none; /* Removes underline */
+  padding: 10px 15px; /* Adds space inside the bubble */
+  margin: 0 10px; /* Adds space between the bubbles */
+  border-radius: 20px; /* Makes the corners rounded */
+  transition: all 0.3s ease; /* For a smooth transition */
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  background-color: #555; /* Changes the background color on hover */
+  color: #fff; /* Keeps text color white for contrast */
+}
+
+/* Optional: To remove the `br` and make them a single row */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
